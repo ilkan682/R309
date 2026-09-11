@@ -11,15 +11,16 @@ class Point:
 
     def DistanceCordonee(self, x: float, y: float) -> float:
         Distance = math.sqrt((x - self.x) ** 2 + (y - self.y) ** 2)
-        (math.pow(self.x - x, 2)) + math.pow(self.y - y, 2)
-        ((self.x - x) * (self.x - x) + (self.y - y) * (self.y - y))
         return Distance
 
 
 if __name__ == "__main__":
-    p1 = Point(3.2, 1)
+    x = float(input("Entrez x : "))
+    y = float(input("Entrez y : "))
+
+    p1 = Point(x, y)
     print(p1)
+
     p2 = Point()
     print(p2)
-
 
